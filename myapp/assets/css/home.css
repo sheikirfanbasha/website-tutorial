@@ -1,0 +1,188 @@
+.frame{
+    background: #F3F3F3;
+    padding: 20px;
+}
+.page-content{
+    text-align: center;
+}
+.title-wrapper{
+    margin-top: -52px;
+}
+.title-wrapper h2{
+    line-height: 1.08;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+.reveal img{
+    animation: 0.72s ease-in-out forwards slidein;
+}
+.reveal h2{
+    animation: 0.72s ease-in-out forwards h2in;
+}
+.reveal span{
+    animation: 0.72s ease-in-out 0.92s forwards spanin;
+}
+.reveal.title-waves{
+    animation: 0.72s ease-in-out 0.92s forwards titlewavein;
+}
+.reveal p{
+    opacity: 0;
+    animation: 0.72s ease-in-out 0.92s forwards parain;
+}
+.reveal a{
+    opacity: 0;
+    animation: 0.72s ease-in-out 1.2s forwards anchorin;
+}
+.logo{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+}
+@keyframes parain{
+    from { transform: translateY(100%); opacity: 0;}
+    to   { transform: translateY(0); opacity: 1;}
+}
+@keyframes anchorin{
+    from { transform: translateY(100%); opacity: 0;}
+    to   { transform: translateY(0); opacity: 1;}
+}
+@keyframes titlewavein{
+    from { transform: scaleX(0);}
+    to   { transform: scaleX(1);}
+}
+@keyframes spanin{
+    from { transform: rotate(-180deg);}
+    to   { transform: rotate(0deg);}
+}
+@keyframes h2in{
+    from { transform: translateY(100%); opacity: 0;}
+    to   { transform: translateY(0); opacity: 1;}
+}
+@keyframes slidein {
+    from { transform: translateY(100%); opacity: 0;}
+    to   { transform: translateY(0); opacity: 1;}
+  }
+.section-container{
+    
+}
+.main-content{
+    font-style: italic;
+}
+.main-content p{
+    margin-bottom: 80px;
+    font-size: 18px;
+    letter-spacing: 0.038em;
+}
+body{
+   height: 100%;
+}
+.title-waves{
+    background: url('../images/text-waves-small.svg');
+    background-size: 390px 5px;
+    background-position: center center;
+    height: 5px;
+    background-repeat: no-repeat;
+
+}
+.title-sequence{
+    position: relative;
+    top: -10px;
+}
+
+@keyframes titleAnimation {
+	0% {
+	  background-position: 0px 0;
+	}
+	7.14286% {
+	  background-position: -326px 0;
+	}
+	14.28571% {
+	  background-position: -652px 0;
+	}
+	21.42857% {
+	  background-position: -978px 0;
+	}
+	28.57143% {
+	  background-position: -1304px 0;
+	}
+	35.71429% {
+	  background-position: -1630px 0;
+	}
+	42.85714% {
+	  background-position: -1956px 0;
+	}
+	50% {
+	  background-position: -2282px 0;
+	}
+	57.14286% {
+	  background-position: -2608px 0;
+	}
+	64.28571% {
+	  background-position: -2934px 0;
+	}
+	71.42857% {
+	  background-position: -3260px 0;
+	}
+	78.57143% {
+	  background-position: -3586px 0;
+	}
+	85.71429% {
+	  background-position: -3912px 0;
+	}
+	92.85714% {
+	  background-position: -4238px 0;
+	}
+	100% {
+	  background-position: -4564px 0;
+	}
+  }
+.sub-title{
+    background: url('../images/sprite-breathing-horizontal.png');
+    position: relative;
+    width: 326px;
+    height: 136px;
+    color: #c39e5f;
+    font-size: 35px;
+    font-family: 'herr', sans-serif;
+    letter-spacing: -0.028em;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 4890px 136px;
+    animation: titleAnimation 0.72s steps(1) both 0.92s;
+}
+
+.title-waves span{
+    background: url('../images/text-wheel.svg');
+    background-size: 16px 16px;
+    background-position: center center;
+    height: 16px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.bottom-container{
+    text-align: center;
+    height: 80px;
+}
+.bottom-container a{
+    box-sizing: border-box;
+    background-color: #224156;
+    padding: 20px 60px 20px 25px;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'futr', sans-serif;
+    letter-spacing: 0.2782em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.body{
+    height: 100%;
+    margin: 0;
+    color: #224156;
+    background: -webkit-linear-gradient(330deg, #f7f7f7, #f1f1f1);
+    background: -o-linear-gradient(330deg, #f7f7f7, #f1f1f1);
+    background: linear-gradient(120deg, #f7f7f7, #f1f1f1);
+    overflow: hidden;
+}
